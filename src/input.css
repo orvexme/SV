@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Couleurs */
+  --color-bg:       #F5EEED;
+  --color-bg2:      #FCE3DB;
+  --color-ink:      #1a1613;
+  --color-ink-soft: #6b6257;
+  --color-rule:     #ccc2ad;
+  --color-accent:   #C77D77;
+
+  /* Polices */
+  --font-italiana:  'Italiana', serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-mono:      'JetBrains Mono', monospace;
+}
+
+@layer base {
+  html, body {
+    background-color: theme(--color-bg);
+    color: theme(--color-ink);
+    font-family: theme(--font-mono);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
